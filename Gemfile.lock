@@ -8,6 +8,7 @@ PATH
   remote: .
   specs:
     clearance (0.13.0)
+      bcrypt-ruby
       diesel (~> 0.1.5)
       rails (>= 3.0)
 
@@ -54,6 +55,9 @@ GEM
       rspec (>= 2.6.0)
     bcat (0.6.1)
       rack (~> 1.0)
+    bcrypt-ruby (3.0.1)
+    bourne (1.0)
+      mocha (= 0.9.8)
     builder (2.1.2)
     capybara (1.0.1)
       mime-types (>= 1.16)
@@ -99,7 +103,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mocha (0.9.12)
+    mocha (0.9.8)
+      rake
     nokogiri (1.5.0)
     polyglot (0.3.2)
     rack (1.2.3)
@@ -160,6 +165,7 @@ PLATFORMS
 DEPENDENCIES
   appraisal (~> 0.3.8)
   aruba (~> 0.4.2)
+  bourne
   bundler (~> 1.0.0)
   capybara (~> 1.0.0)
   clearance!
@@ -167,7 +173,6 @@ DEPENDENCIES
   database_cleaner
   factory_girl_rails
   launchy
-  mocha
   rspec-rails (~> 2.6.0)
   shoulda-matchers!
   sqlite3
