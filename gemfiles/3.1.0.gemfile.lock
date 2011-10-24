@@ -7,7 +7,8 @@ GIT
 PATH
   remote: /Users/croaky/dev/clearance
   specs:
-    clearance (0.12.0)
+    clearance (0.13.0)
+      bcrypt-ruby
       diesel (~> 0.1.5)
       rails (>= 3.0)
 
@@ -57,6 +58,8 @@ GEM
     bcat (0.6.1)
       rack (~> 1.0)
     bcrypt-ruby (3.0.0)
+    bourne (1.0)
+      mocha (= 0.9.8)
     builder (3.0.0)
     capybara (1.0.1)
       mime-types (>= 1.16)
@@ -101,7 +104,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mocha (0.9.12)
+    mocha (0.9.8)
+      rake
     multi_json (1.0.3)
     nokogiri (1.5.0)
     polyglot (0.3.2)
@@ -173,6 +177,7 @@ PLATFORMS
 DEPENDENCIES
   appraisal (~> 0.3.8)
   aruba (~> 0.4.2)
+  bourne
   bundler (~> 1.0.0)
   capybara (~> 1.0.0)
   clearance!
@@ -180,7 +185,6 @@ DEPENDENCIES
   database_cleaner
   factory_girl_rails
   launchy
-  mocha
   rails (= 3.1.0)
   rspec-rails (~> 2.6.0)
   shoulda-matchers!
